@@ -1,0 +1,42 @@
+.plane{
+    ul{
+
+        li{
+           
+            position: relative;
+            margin: 1rem 1.5rem;
+            @media (min-width: 575.98px) {
+                font-size: 2rem;
+                
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -1rem;
+                width: 10px!important;
+                background-color: $Orange;
+                height: 10px!important;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
+        }
+    }
+}
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width: 10px!important;
+    height: 10px!important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: $Orange;
+}
+
+

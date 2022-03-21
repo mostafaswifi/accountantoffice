@@ -1,0 +1,34 @@
+.sign{
+    cursor: pointer;
+    transition: all  0.3s ease-in-out;
+    -webkit-transition: all  0.3s ease-in-out;
+    -moz-transition: all  0.3s ease-in-out;
+    -ms-transition: all  0.3s ease-in-out;
+    -o-transition: all  0.3s ease-in-out;
+    &:hover{
+        transform: translateY(-10%);
+        -webkit-transform: translateY(-10%);
+        -moz-transform: translateY(-10%);
+        -ms-transform: translateY(-10%);
+        -o-transform: translateY(-10%);
+        &:after
+       
+{
+        top: 40%;
+       }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 10%;
+        height: 40%;
+        width: 3px;
+        background-color: $Orange;
+        transition: all  0.3s ease-in-out;
+        -webkit-transition: all  0.3s ease-in-out;
+        -moz-transition: all  0.3s ease-in-out;
+        -ms-transition: all  0.3s ease-in-out;
+        -o-transition: all  0.3s ease-in-out;
+}
+}

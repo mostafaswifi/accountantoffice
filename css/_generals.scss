@@ -1,0 +1,75 @@
+//importing-fonts
+@font-face {
+    font-family: "cairo";
+    src: url('../assets/fonts/Cairo/Cairo-VariableFont_wght.ttf');
+  }
+
+//generals
+*{
+    font-family: "cairo";
+}
+body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: $Orange $Dark;
+  }
+  body::-webkit-scrollbar-track {
+    background: $Dark;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: $Orange ;
+    border: 3px solid $Orange;
+  }
+ul {
+    list-style: none; /* Remove default bullets */
+  }
+  @function color($colorName) {
+    @return $colorName;
+  }
+  .price ul li::before{
+    background-color: color(white);
+  }
+
+  .service  ul li::before{
+    background-color: color($Orange);
+  }
+.service  ul li::before ,.price ul li::before {
+    content: "";
+    font-weight: bold;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 1rem;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+}
+
+//general-classes
+.bgDark{
+    background-color: $Dark;
+}
+
+.bgOrange{
+    background-color: $Orange;
+}
+
+.text-dark{
+    color:$Dark;
+}
+
+.text-orange{
+    color: $Orange;
+}
+
+.border-orange{
+    border: $Orange 2px solid;
+}
+
+.border-dark{
+    border: $Dark 2px solid;
+}
